@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tables || ITIS 3135 || Adam Edwards' Amazing Earthworm</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+        <link href="./styles/stylesheet.css" rel="stylesheet">
+        <script src="scripts/sitelinks.js"></script>
+        <script src="scripts/footerlinks.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Adam Edwards' Amazing Earthworm || ITIS 3135</h1>
+            <nav id="siteLinks">Site Links</nav>
+            <nav id="siteLinks2">Site Links 2</nav>
+        </header>
+        <main>
+            <h2>HTML Tables</h2>
+            <h3>My Tabular Data</h3>
+            <div class="centerfix">
+                <ul>
+                    <li>Adam Edwards aedwa152@uncc.edu All</li>
+                    <li>Billy Billyson billyb1@edwardssoftware.com 2</li>
+                    <li>Bob Bobbyson bobb2@edwardssoftware.com 4</li>
+                    <li>John Johnson johnj3@edwardssoftware.com 5</li>
+                    <li>Ron Ronson ronr4@edwardssoftware.com 7</li>
+                    <li>Jason Jasonsonsen jasonj5@edwardssoftware.com 3</li>
+                    <li>Jasonson Jasonsonsenson jasonj6@edwardssoftware.com 4</li>
+                    <li>Joe Smirt joesmirtty@edwardssoftware.com 10</li>
+                </ul>
+            </div>
+            <h3>Employee Data in Simple Table</h3>
+            <table class="centerfix">
+                <tbody>
+                    <tr>
+                        <th>Name</th><th>Email</th><th>Years</th>
+                    </tr>
+                    <tr>
+                        <td>Adam Edwards</td><td>aedwa152@uncc.edu</td><td>All</td>
+                    </tr>
+                    <tr>
+                        <td>Billy Billyson</td><td>billyb1@edwardssoftware.com</td><td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Bob Bobbyson</td><td>bobb2@edwardssoftware.com</td><td>4</td>
+                    </tr>
+                    <tr>
+                        <td>John Johnson</td><td>johnj3@edwardssoftware.com</td><td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Ron Ronson</td><td>ronr4@edwardssoftware.com</td><td>7</td>
+                    </tr>
+                    <tr>
+                        <td>Jason Jasonsonsen</td><td>jasonj5@edwardssoftware.com</td><td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Jasonson Jasonsonsenson</td><td>jasonj6@edwardssoftware.com</td><td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Joe Smirt</td><td>joesmirtty@edwardssoftware.com</td><td>10</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Employee Data in Complex Table</h3>
+            <figure class="complexfigure">
+                <figcaption>Employee Information</figcaption>
+                <table class="table">
+                    <thead>
+                        <tr class="body">
+                            <th class="header" scope="col">Job</th>
+                            <th class="header" scope="col">Name</th>
+                            <th class="header" scope="col">Email</th>
+                            <th class="header" scope="col">Years</th>
+                            <th class="header" scope="col">Salary</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="body">
+                            <td class="data">Big Man</td>
+                            <td class="data">Adam Edwards</td>
+                            <td class="data">aedwa152@uncc.edu</td>
+                            <td class="data">All</td>
+                            <td class="data">1,000,000.01</td>
+                        </tr>
+                        <tr class="body">
+                            <td class="data" rowspan="3">Little Men</td>
+                            <td class="data">Billy Billyson</td>
+                            <td class="data">billyb1@edwardssoftware.com</td>
+                            <td class="data">2</td>
+                            <td class="data">99,000</td>
+                        </tr>
+                        <tr class="body">
+                            <td class="data">Bob Bobbyson</td>
+                            <td class="data">bobb2@edwardssoftware.com</td>
+                            <td class="data">4</td>
+                            <td class="data">98,000</td>
+                        </tr>
+                        <tr class="body">
+                            <td class="data">John Johnson</td>
+                            <td class="data">johnj3@edwardssoftware.com</td>
+                            <td class="data">5</td>
+                            <td class="data">97,000</td>
+                        </tr>
+                        <tr class="body">
+                            <td class="data" rowspan="3">Littler Men</td>
+                            <td class="data">Ron Ronson</td>
+                            <td class="data">ronr4@edwardssoftware.com</td>
+                            <td class="data">7</td>
+                            <td class="data">69,000</td>
+                        </tr>
+                        <tr class="body">
+                            <td class="data">Jason Jasonsonsen</td>
+                            <td class="data">jasonj5@edwardssoftware.com</td>
+                            <td class="data">3</td>
+                            <td class="data">68,000</td>
+                        </tr>
+                        <tr class="body">
+                            <td class="data">Jasonson Jasonsonsenson</td>
+                            <td class="data">jasonj6@edwardssoftware.com</td>
+                            <td class="data">4</td>
+                            <td class="data">67,000</td>
+                        </tr>
+                        <tr class="body">
+                            <td class="data">Littlest Man</td>
+                            <td>Joe Smirt</td>
+                            <td>joesmirtty@edwardssoftware.com</td>
+                            <td>10</td>
+                            <td class="data">1</td>
+                        </tr>
+                        <tr class="body">
+                            <th class="header" colspan="3">Total Years of Service</th>
+                            <td class="data">35 + All</td>
+                            <td class="data">1,498,001.01</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </figure>
+        </main>
+        <footer>
+            <nav id="footerLinks">Footer Links</nav>
+            <p id="designLink"></p>
+            <p id="validatorLink"></p>
+        </footer>
+        <script>sitelinks();</script>
+        <script>sitelinks2();</script>
+        <script>footerlinks();</script>
+    </body>
+</html>

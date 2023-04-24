@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Polygons || ITIS 3135 || Adam Edwards' Amazing Earthworm</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+        <link href="./styles/stylesheet.css" rel="stylesheet">
+        <script src="scripts/sitelinks.js"></script>
+        <script src="scripts/footerlinks.js"></script>
+        <script src="scripts/polygons.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Adam Edwards' Amazing Earthworm || ITIS 3135</h1>
+            <nav id="siteLinks">Site Links</nav>
+            <nav id="siteLinks2">Site Links 2</nav>
+        </header>
+        <main>
+            <h2>Polygons</h2>
+            <form onsubmit="polygons(); return false;">
+                Amazing Earthworm would like you to enter a number between 1 and 10:<input class="number" type="text" name="number" id="polygonNumber" value="">
+                <input onclick="polygons()" type="button" value="Submit">
+            </form>
+            <h3>
+                <span id="polygon"></span>
+            </h3>
+        </main>
+        <footer>
+            <nav id="footerLinks">Footer Links</nav>
+            <p id="designLink"></p>
+            <p id="validatorLink"></p>
+        </footer>
+        <script>sitelinks();</script>
+        <script>sitelinks2();</script>
+        <script>footerlinks();</script>
+    </body>
+</html>

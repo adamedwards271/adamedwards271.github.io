@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home || ITIS 3135 || Adam Edwards' Amazing Earthworm</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+        <link href="./styles/stylesheet.css" rel="stylesheet">
+        <script src="scripts/sitelinks.js"></script>
+        <script src="scripts/footerlinks.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Adam Edwards' Amazing Earthworm || ITIS 3135</h1>
+            <nav id="siteLinks">Site Links</nav>
+            <nav id="siteLinks2">Site Links 2</nav>
+        </header>
+        <main>
+            <h2>Arrays</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" autofocus>
+                <label for="salary">Salary:</label>
+                <input type="text" id="salary" name="salary">
+                <button type="button" id="addButton">Add</button>
+            </form>
+            <table id="results_table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <div id="results"></div>
+        </main>
+        <footer>
+            <nav id="footerLinks">Footer Links</nav>
+            <p id="designLink"></p>
+            <p id="validatorLink"></p>
+        </footer>
+        <script src="arrays.js"></script>
+        <script>sitelinks();</script>
+        <script>sitelinks2();</script>
+        <script>footerlinks();</script>
+    </body>
+</html>

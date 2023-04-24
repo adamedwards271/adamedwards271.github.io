@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forms || ITIS 3135 || Adam Edwards' Amazing Earthworm</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+        <link href="./styles/stylesheet.css" rel="stylesheet">
+        <script src="scripts/sitelinks.js"></script>
+        <script src="scripts/footerlinks.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Adam Edwards' Amazing Earthworm || ITIS 3135</h1>
+            <nav id="siteLinks">Site Links</nav>
+            <nav id="siteLinks2">Site Links 2</nav>
+        </header>
+        <main>
+            <h2>Forms</h2>
+            <form action="#">
+                <fieldset>
+                    <legend class="formlegend">Name</legend>
+                    <label>
+                        <input type="name" placeholder="Joe Apple" size="auto" minlength="1" required>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend class="formlegend">Phone Number</legend>
+                    <label>
+                        <input type="tel" placeholder="000-000-0000" size="auto" maxlength="11" minlength="10" required>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend class="formlegend">Email Address</legend>
+                    <label>
+                        <input type="email" placeholder="email@something.com" size="auto" minlength="7" required>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend class="formlegend">What all did you see?</legend>
+                    <label>
+                        <input type="checkbox" name="seeoptions" id="webdev" value="webdev">Web Development 
+                    </label>
+                    <label>
+                        <input type="checkbox" name="seeoptions" id="software" value="software">Software Engineering
+                    </label>
+                    <label>
+                        <input type="checkbox" name="seeoptions" id="security" value="security">Cyber Security 
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend class="formlegend">Who was your favorite employee?</legend>
+                    <label>
+                        <input type="radio" name="favemployee" id="adamedwards" value="adamedwards">Adam Edwards
+                    </label>
+                    <label>
+                        <input type="radio" name="favemployee" id="billybillyson" value="billybillyson">Bily Billyson
+                    </label>
+                    <label>
+                        <input type="radio" name="favemployee" id="bobbobbyson" value="bobbobbyson">Bob Bobbyson
+                    </label>
+                    <label>
+                        <input type="radio" name="favemployee" id="johnjohnson" value="johnjohnson">John Johnson
+                    </label>
+                    <label>
+                        <input type="radio" name="favemployee" id="ronronson" value="ronronson">Ron Ronson
+                    </label>
+                    <label>
+                        <input type="radio" name="favemployee" id="jasonjasonsenson" value="jasonjasonsenson">Jason Jasonsonsen
+                    </label>
+                    <label>
+                        <input type="radio" name="favemployee" id="jasonsonjasonsonsenson" value="jasonsonjasonsonsenson">Jasonson Jasonsonsenson
+                    </label>
+                    <label>
+                        <input type="radio" name="favemployee" id="joesmirt" value="jorsmirt">Joe Smirt
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend class="formlegend">What would you rate us?</legend>
+                    <label>
+                        <select name="rating" id="rating">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+        <footer>
+            <nav id="footerLinks">Footer Links</nav>
+            <p id="designLink"></p>
+            <p id="validatorLink"></p>
+        </footer>
+        <script>sitelinks();</script>
+        <script>sitelinks2();</script>
+        <script>footerlinks();</script>
+    </body>
+</html>

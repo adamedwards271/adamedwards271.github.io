@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>First Scripts || ITIS 3135 || Adam Edwards' Amazing Earthworm</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+        <link href="./styles/stylesheet.css" rel="stylesheet">
+        <script src="scripts/sitelinks.js"></script>
+        <script src="scripts/footerlinks.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="./scripts/defaultscripts.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Adam Edwards' Amazing Earthworm || ITIS 3135</h1>
+            <nav id="siteLinks">Site Links</nav>
+            <nav id="siteLinks2">Site Links 2</nav>
+        </header>
+        <main>
+            <h2>First Scripts</h2>
+            <h3>
+                <span id="currentDate"></span>
+            </h3>
+            <br>
+            <form>
+                Please enter your name:<input class="name" type="text" name="name" id="nameForm" value="Name">
+                Please tell us how you are:<input class="mood" type="text" name="mood" id="moodForm" value="Mood">
+                <input onclick="nameAndMood()" type="button" value="Submit">
+            </form>
+            <p>
+                <span id="response"></span>
+            </p> 
+            <h3>What Edwards' Software can do for you!</h3>
+
+            <button class="scriptsButtons" id="sayHi" onclick="sayHi()">We can tell you Hi!</button>
+            <button class="scriptsButtons" id="removeHi" onclick="removeHi()">We can not tell you Hi also!</button>
+            <p id="sayHiMessage"></p>
+
+            <button class="scriptsButtons" id="chooseNumber" onclick="randomNumber()">We can choose a number from 1-10 for you!</button>
+            <button class="scriptsButtons" id="unchoseNumber" onclick="removeNumber()">OR we can remove that too if you want :/</button>
+            <p id="numberMessage"></p>
+
+            <button class="scriptsButtons" id="callName" onclick="callName()">We can call you names! (click me multiple times)</button>
+            <button class="scriptsButtons" id="removeName" onclick="removeName()">OR take it back too.</button>
+            <p id="callNameMessage"></p>
+            <p id="callNameTakeBack"></p>
+
+            <button class="scriptsButtons" id="changeBackground" onclick="changeBackgroundColor()">We can change the backgroud color!</button>
+            <button class="scriptsButtons" id="originalBackground" onclick="originalBackground()">Now fix what you did.</button>
+
+        </main>
+        <footer>
+            <nav id="footerLinks">Footer Links</nav>
+            <p id="designLink"></p>
+            <p id="validatorLink"></p>
+        </footer>
+        <script>date();</script>
+        <script>sitelinks();</script>
+        <script>sitelinks2();</script>
+        <script>footerlinks();</script>
+    </body>
+</html>
